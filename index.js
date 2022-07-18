@@ -32,5 +32,5 @@ app.use("/api/rooms", roomsRoute);
 
 app.listen(8800, () => {
     connect()
-    console.log("Connected to port 8080")
+    console.log("Connected to port 8800")
 })
