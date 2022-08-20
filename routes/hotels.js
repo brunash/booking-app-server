@@ -19,7 +19,8 @@ router.delete("/:id", verifyAdmin, deleteHotel);
 //GET SPECIFIC HOTEL
 router.get("/:id", getHotel);
 
-//GET ALL
+//GET ALL 
+//
 router.get("/", getAllHotels);
 
 
