@@ -30,10 +30,11 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
-    methods: "GET",
+    origin: "http://localhost:8080/",
+    methods: "get",
   })
 );
+//app.use(cors());
 
 app.use("/api/auth", authRoute)
 app.use("/api/users", usersRoute);
@@ -54,7 +55,7 @@ app.use((err, req, res, next) => {
  )
 })
 
-app.listen(8800, () => {
+app.listen(8080, () => {
     connect()
     console.log("Connected to port 8800")
 })
